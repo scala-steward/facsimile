@@ -50,7 +50,7 @@ import xerial.sbt.Sonatype.sonatypeSettings
 // Keep all compiler and library version numbers here for easy maintenance.
 val CatsVersion = "1.6.0"
 val LightbendConfigVersion = "1.3.4"
-val ParboiledVersion = "2.1.6"
+val ParboiledVersion = "2.1.8"
 val ScalaVersion = "2.12.8"
 val ScalaCheckVersion = "1.14.0"
 val ScalaTestVersion = "3.0.8"
