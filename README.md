@@ -39,10 +39,13 @@ __Note__: Installers for _Facsimile_ that allow it to be utilized for simulation
  check back for developments.
 
 _Facsimile_ utilizes the most recent _Java LTS_ (_long-term support_) release that is supported by its dependencies. The
-current _Facsimile_ version depends upon _Java 17 LTS_, and it is recommended that you utilize only this version of
-_Java_ for _Facsimile_.
+current _Facsimile_ version depends upon _Java 25 LTS_, and it is recommended that you utilize only this version of
+_Java_ for _Facsimile_ for the time being.
 
-Any _Java 17 LTS_ release, including those by _Oracle_, _OpenJDK_, _Azul Systems_, _AdoptOpenJDK_, etc. should work just
+Once a stable _Facsimile_ release has been announced, we'll support the oldest freely and widely supported _Java LTS_
+release, or _Java 25 LTS_, whichever is newer.
+
+Any _Java 25 LTS_ release, including those by _Oracle_, _OpenJDK_, _Azul Systems_, _Eclipse_, etc. should work just
 fine. It is strongly recommended that your organization reviews the licensing of your chosen _Java_ supplier to ensure
 that you are in compliance with its terms.
 
