@@ -31,7 +31,7 @@
 //======================================================================================================================
 
 //======================================================================================================================
-// SBT build configuration Facsimile and its sub-projects.
+// SBT build configuration for Facsimile and its sub-projects.
 //======================================================================================================================
 
 import java.time.ZonedDateTime
@@ -552,74 +552,6 @@ lazy val facsimileCollection = project.in(file(FacsimileCollectionName))
     "dev.zio" %% "izumi-reflect" % IzumiReflectVersion
   ),
 )
-
-// Temporarily commented out - not ready for launch, right now.
-//// Name of the facsimile-sfx project.
-//lazy val FacsimileSFXName = "facsimile-sfx"
-//
-//// Facsimile-SFX project.
-////
-//// The Facsimile-SFX project is a lightweight Scala wrapper for JavaFX.
-//lazy val facsimileSFX = project.in(file(FacsimileSFXName))
-//.dependsOn(facsimileUtil % dependsOnCompileTest)
-//.settings(sourceProjectSettings: _*)
-//.settings(docProjectSettings: _*)
-//.settings(publishedProjectSettings: _*)
-//.settings(
-//
-//  // Name and description of this project.
-//  name := "Facsimile SFX Library",
-//  normalizedName := FacsimileSFXName,
-//  description:= """The Facsimile SFX library is a lightweight Scala wrapper for JavaFX.""".stripMargin.
-//  replaceAll("\n", " "),
-//)
-
-// Temporarily commented out - not ready for launch, right now.
-//// Name of the facsimile-types project.
-//val FacsimileTypesName = "facsimile-types"
-//
-//// Facsimile-Types project.
-////
-//// The Facsimile-Types project supports custom value type classes, which support dimensional analysis, physics
-//// calculations, probabilities, etc., in a variety of supported units.
-//lazy val facsimileTypes = project.in(file(FacsimileTypesName))
-//.dependsOn(facsimileUtil % dependsOnCompileTest)
-//.settings(sourceProjectSettings: _*)
-//.settings(docProjectSettings: _*)
-//.settings(publishedProjectSettings: _*)
-//.settings(
-//
-//  // Name and description of this project.
-//  name := "Facsimile Types Library",
-//  normalizedName := FacsimileTypesName,
-//  description := """The Facsimile Types library supports dimensional analysis, physics calculations, probabilities,
-//  |specified in a variety of value classes, in a variety of supported units.""".stripMargin.replaceAll("\n", " "),
-//
-//  libraryDependencies ++= Seq(
-//    "org.typelevel" %% "spire" % SpireVersion,
-//  ),
-//)
-
-// Temporarily commented out - not ready for launch, right now.
-//// Name of the facsimile-stat project.
-//val FacsimileStatName = "facsimile-stat"
-//
-//// Facsimile-Stat project.
-////
-//// The Facsimile-Stat project supports statistical distribution sampling, reporting, analysis and inference testing.
-//lazy val facsimileStat = project.in(file(FacsimileStatName))
-//.dependsOn(facsimileUtil % dependsOnCompileTest, facsimileTypes % dependsOnCompileTest)
-//.settings(sourceProjectSettings: _*)
-//.settings(docProjectSettings: _*)
-//.settings(publishedProjectSettings: _*)
-//.settings(
-//
-//  // Name and description of this project.
-//  name := "Facsimile Statistical Library",
-//  normalizedName := FacsimileStatName,
-//  description := """The Facsimile Statistical library supports statistical distribution sampling, reporting, analysis
-//  |and inference testing.""".stripMargin.replaceAll("\n", " "),
-//)
 
 // Name of the facsimile-simulation project.
 val FacsimileSimulationName = "facsimile-simulation"

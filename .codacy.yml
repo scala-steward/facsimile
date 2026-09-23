@@ -40,9 +40,4 @@
 # Prevent Codacy from examining files that are not currently part of the released product.
 ---
 exclude_paths:
-  - 'core/**'
-  - 'facsimile-sfx/**'
-  - 'facsimile-stat/**'
-  - 'facsimile-types/**'
-  - 'macro/**'
-  - 'parked/**'
+  - 'docs/**'
