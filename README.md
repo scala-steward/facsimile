@@ -1,13 +1,16 @@
-# Facsimile Simulation Library
+# _Facsimile_ Project
 
-The _Facsimile_ project's goal is to develop and maintain a high-quality, 3D, discrete-event simulation library that can
-be used for industrial simulation projects in an engineering, logistics and/or manufacturing environment.
+The _Facsimile_ project's goal is to develop and maintain a high-quality set of libraries supporting the development of
+industrial _[discrete-event](https://en.wikipedia.org/wiki/Discrete-event_simulation)_, _physics-based emulation_, and
+live-streamed _[process digital twin](https://en.wikipedia.org/wiki/Digital_twin)_ simulations in an engineering,
+logistics and/or manufacturing environment.
 
-Facsimile simulations run on the _Java Virtual Machine_ under _Microsoft Windows_, _Linux_, _Mac OS X_, _BSD_ and
-_Unix_.
+All libraries are developed using a hybrid _functional programming_ (_FP_)/_object-oriented programming_ (_OOP_)
+paradigm, and are developed in the _[Scala](https://scala-land.org)_ programming language. The resulting libraries run
+on the _Java Virtual Machine_ (_JVM_) under _Microsoft Windows_, _Linux_, _macOS_, _BSD_, and _Unix_.
 
-Facsimile is open-source/free software and is distributed under version 3 of the
-_[GNU General Public License](http://www.gnu.org/licenses/lgpl-3.0-standalone.html)_ (GPLv3).
+_Facsimile_ is open-source/free software and is distributed under version 3 of the
+_[GNU General Public License](http://www.gnu.org/licenses/lgpl-3.0-standalone.html)_ (_GPLv3_).
 
 Current status of official master _Facsimile_ branch:
 
