@@ -1,6 +1,6 @@
 //======================================================================================================================
 // Facsimile: A Discrete-Event Simulation Library
-// Copyright © 2004-2025, Michael J Allen.
+// Copyright © 2004-2026, Michael J Allen.
 //
 // This file is part of Facsimile.
 //
@@ -303,4 +303,3 @@ extends AnyFunSpec, ScalaCheckPropertyChecks:
           val newH = h1 ++ h2
           val newL = l1 ::: l2
           verifyMultiMemberHeap(newH, newL.sorted)
-

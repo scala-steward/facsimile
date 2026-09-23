@@ -1,6 +1,6 @@
 //======================================================================================================================
 // Facsimile: A Discrete-Event Simulation Library
-// Copyright © 2004-2025, Michael J Allen.
+// Copyright © 2004-2026, Michael J Allen.
 //
 // This file is part of Facsimile.
 //
@@ -45,7 +45,7 @@ import org.facsim.sim.model.{Point, Rotation}
  *  @tparam E Type of element whose state is being stored.
  *
  *  @tparam S Final type of the element state subclass.
- *              
+ *
  *  @since 0.0
  */
 abstract class ElementState[E <: Element[E, S]: Tag, S <: ElementState[E, S]: Tag]:

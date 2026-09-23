@@ -1,6 +1,6 @@
 //======================================================================================================================
 // Facsimile: A Discrete-Event Simulation Library
-// Copyright © 2004-2025, Michael J Allen.
+// Copyright © 2004-2026, Michael J Allen.
 //
 // This file is part of Facsimile.
 //
@@ -59,7 +59,7 @@ import squants.time.Seconds
  *  @param events Set of simulation events scheduled to occur at a future simulation time.
  *
  *  @param runState Current state of the simulation run.
- *  
+ *
  *  @param sim Simulation to which this simulation state applies, typically passed implicitly.
  *
  *  @since 0.0

@@ -1,6 +1,6 @@
 //======================================================================================================================
 // Facsimile: A Discrete-Event Simulation Library
-// Copyright © 2004-2025, Michael J Allen.
+// Copyright © 2004-2026, Michael J Allen.
 //
 // This file is part of Facsimile.
 //
@@ -174,7 +174,7 @@ extends AnyFunSpec, ScalaCheckPropertyChecks:
      */
     lazy val versionShortOpt: String = "-V"
 
-    /** Version long option. 
+    /** Version long option.
      */
     lazy val versionLongOpt: String = "--version"
 
@@ -313,5 +313,3 @@ extends AnyFunSpec, ScalaCheckPropertyChecks:
         new TestData:
           withLocale(Locale.US.nn):
             assert(parser.version === versionHeader)
-
-
