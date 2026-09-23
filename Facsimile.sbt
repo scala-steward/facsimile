@@ -143,9 +143,9 @@ ThisBuild / scalaVersion := PrimaryScalaVersion
 
 // Support automated builds in GitHub, following commits, PRs, etc.
 //
-// Specify the user of Java 17 in the latest Ubuntu release.
+// Specify the use of Java 25 in the latest Ubuntu release.
 ThisBuild / githubWorkflowJavaVersions := Seq(
-  JavaSpec.temurin("17"),
+  JavaSpec.temurin("25"),
 )
 
 // Publish artifacts to the Sonatype Central Release repository.
@@ -402,7 +402,7 @@ lazy val sourceProjectSettings = Seq(
   Compile / scalacOptions := commonScalaCSettings ++ Seq(
     "-feature",
     "-indent",
-    "-java-output-version:17",
+    "-java-output-version:25",
     "-new-syntax",
     "-project-url", s"$gitURL",
     "-unchecked",
