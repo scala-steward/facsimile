@@ -39,7 +39,6 @@ package org.facsim.sim.application
 import java.util.jar.Attributes.Name
 import org.facsim.sim.LibResource
 import org.facsim.util.{Manifest, NonPure, Version}
-import scala.annotation.unused
 
 /** Base trait for a _Facsimile_ application.
  *
@@ -175,8 +174,10 @@ trait FacsimileApp:
   /** Run the simulation model.
    *
    *  @param config Configuration for this simulation run.
+   *
+   *  @since 0.4
    */
-  private def runModel(@unused config: FacsimileConfig): Unit = () // Temporary: config is marked unused to avoid error
+  protected def runModel(config: FacsimileConfig): Unit
 
 /** Facsimile application companion object.
  */
