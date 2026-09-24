@@ -36,7 +36,6 @@
 //======================================================================================================================
 package org.facsim.sim.model.structure
 
-import izumi.reflect.Tag
 import org.facsim.sim.model.state.ElementState
 
 /** Base class for all simulation model elements.
@@ -68,7 +67,7 @@ import org.facsim.sim.model.state.ElementState
  *
  *  @since 0.2
  */
-abstract class Element[E <: Element[E, S]: Tag, S <: ElementState[E, S]: Tag]:
+abstract class Element[E <: Element[E, S], S <: ElementState[E, S]]:
 
   /** Name of this element.
    *

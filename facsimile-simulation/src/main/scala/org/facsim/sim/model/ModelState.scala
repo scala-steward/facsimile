@@ -36,8 +36,6 @@
 //======================================================================================================================
 package org.facsim.sim.model
 
-import izumi.reflect.Tag
-
 /** Base class for model states.
  *
  *  Model state encapsulates the state of a simulation model. It may contain any necessary state information, but each
@@ -49,4 +47,4 @@ import izumi.reflect.Tag
  *
  *  @since 0.0
  */
-abstract class ModelState[M <: ModelState[M]: Tag]
+abstract class ModelState[M <: ModelState[M]]

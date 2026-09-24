@@ -36,7 +36,6 @@
 //======================================================================================================================
 package org.facsim.sim.model.state
 
-import izumi.reflect.Tag
 import org.facsim.sim.model.structure.Element
 import org.facsim.sim.model.{Point, Rotation}
 
@@ -48,7 +47,7 @@ import org.facsim.sim.model.{Point, Rotation}
  *
  *  @since 0.0
  */
-abstract class ElementState[E <: Element[E, S]: Tag, S <: ElementState[E, S]: Tag]:
+abstract class ElementState[E <: Element[E, S], S <: ElementState[E, S]]:
 
   /** Child elements, mapped by name.
    *

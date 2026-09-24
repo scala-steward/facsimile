@@ -132,7 +132,7 @@ final class Simulation[M <: ModelState[M]: Tag]:
    *
    *  @since 0.0
    */
-  def takeUntil[A: Tag](ts: Seq[SimulationTransition[M, A]], terminationValue: A)
+  def takeUntil[A](ts: Seq[SimulationTransition[M, A]], terminationValue: A)
   (p: ((SimulationState[M], A)) => Boolean): SimulationTransition[M, A] =
 
     // Transition type.
@@ -408,5 +408,5 @@ object Simulation:
    *
    *  @return `actions` wrapped as an action suitable for dispatching by an event.
    */
-  given createAnonymousAction[M <: ModelState[M]: Tag]: Conversion[SimulationAction[M], AnonymousAction[M]] =
+  given createAnonymousAction[M <: ModelState[M]]: Conversion[SimulationAction[M], AnonymousAction[M]] =
     (actions: SimulationAction[M]) => new AnonymousAction[M](actions)

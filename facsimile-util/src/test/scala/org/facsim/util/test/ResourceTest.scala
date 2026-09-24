@@ -145,7 +145,7 @@ extends AnyFunSpec, CommonTestMethods:
             assert(new Resource(testBundleName).apply(helloResource) === "Bonjour!")
 
           // ...and anyone who speaks Spanish...
-          withLocale(new Locale("es")):
+          withLocale(Locale.of("es").nn):
             assert(new Resource(testBundleName).apply(helloResource) === "¡Hola!")
       it("must retrieve numeric resources OK"):
         new testResources:

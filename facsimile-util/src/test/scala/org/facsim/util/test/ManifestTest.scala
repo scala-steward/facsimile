@@ -104,11 +104,11 @@ extends AnyFunSpec, CommonTestMethods:
 
     /** Inception timestamp in the dummy manifest.
      */
-    lazy val inceptionTime = ZonedDateTime.parse("2004-06-22T18:16-04:00[America/New_York]")
+    lazy val inceptionTime: ZonedDateTime = ZonedDateTime.parse("2004-06-22T18:16-04:00[America/New_York]").nn
 
     /** Build timestamp in the dummy manifest.
      */
-    lazy val buildTime = ZonedDateTime.parse("2014-08-14T13:40:00.000-04:00[America/New_York]")
+    lazy val buildTime: ZonedDateTime = ZonedDateTime.parse("2014-08-14T13:40:00.000-04:00[America/New_York]").nn
 
     /** Invalid version string.
      */

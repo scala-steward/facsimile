@@ -139,7 +139,7 @@ extends AnyFunSpec, ScalaCheckPropertyChecks:
 
       // Create a wrapped function that both calls the original function while setting the wasCalled flag in the
       // process. (This is the function that we'll actually memoize.)
-      val wf = wrapFn(f) _
+      val wf = wrapFn(f)
 
       // Create a memoized version of the wrapped function.
       val mf = Memoize(wf)

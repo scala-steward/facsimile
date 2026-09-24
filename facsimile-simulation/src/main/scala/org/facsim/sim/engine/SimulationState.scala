@@ -36,7 +36,6 @@
 //======================================================================================================================
 package org.facsim.sim.engine
 
-import izumi.reflect.Tag
 import org.facsim.sim.PriorityQueue
 import org.facsim.sim.model.ModelState
 import squants.Time
@@ -64,7 +63,7 @@ import squants.time.Seconds
  *
  *  @since 0.0
  */
-final class SimulationState[M <: ModelState[M]: Tag] private[engine](private[engine] val modelState: M,
+final class SimulationState[M <: ModelState[M]] private[engine](private[engine] val modelState: M,
 private[engine] val nextEventId: Long, private[engine] val current: Option[Event[M]],
 private[engine] val events: PriorityQueue[Event[M]], private[engine] val runState: RunState)(using sim: Simulation[M]):
 

@@ -36,7 +36,6 @@
 //======================================================================================================================
 package org.facsim.sim.model
 
-import izumi.reflect.Tag
 import org.facsim.sim.{LibResource, SimulationAction}
 import org.facsim.sim.engine.{Simulation, RunState}
 import squants.Time
@@ -53,7 +52,7 @@ import squants.Time
  *
  *  @param simulation Reference to the executing simulation.
  */
-private[sim] final class EndSnapAction[M <: ModelState[M]: Tag](snapLength: Time, snapsRemaining: Int)
+private[sim] final class EndSnapAction[M <: ModelState[M]](snapLength: Time, snapsRemaining: Int)
 (using simulation: Simulation[M])
 extends Action[M]:
 

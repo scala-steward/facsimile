@@ -100,4 +100,4 @@ class Resource(bundleName: String):
   final def apply(key: String, arguments: Any*): String =
 
     // To convert a Scala vararg to a Java vararg, while boxing numbers requires this rather ugly code...
-    MessageFormat.format(bundle.getString(key), arguments.map(_.asInstanceOf[AnyRef]): _*).nn
+    MessageFormat.format(bundle.getString(key), arguments.map(_.asInstanceOf[AnyRef])*).nn

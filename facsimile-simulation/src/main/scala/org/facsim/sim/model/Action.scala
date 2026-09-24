@@ -36,7 +36,6 @@
 //======================================================================================================================
 package org.facsim.sim.model
 
-import izumi.reflect.Tag
 import org.facsim.sim.SimulationAction
 
 /** An _action_ is a _state transition_ that takes the state of the simulation and results in a new simulation
@@ -54,7 +53,7 @@ import org.facsim.sim.SimulationAction
  *
  *  @since 0.0
  */
-abstract class Action[M <: ModelState[M]: Tag]:
+abstract class Action[M <: ModelState[M]]:
 
   /** Actions to be performed by this instance.
    *

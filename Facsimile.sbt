@@ -34,7 +34,6 @@
 //======================================================================================================================
 // SBT build configuration for Facsimile and its sub-projects.
 //======================================================================================================================
-
 import java.time.ZonedDateTime
 import java.util.jar.Attributes.Name
 import sbtrelease.ReleaseStateTransformations._
@@ -49,7 +48,7 @@ import xerial.sbt.Sonatype.{sonatypeCentralHost, sonatypeSettings}
 val CatsVersion = "2.13.0"
 val IzumiReflectVersion = "3.0.10"
 val PekkoVersion = "1.0.2"
-val PrimaryScalaVersion = "3.3.8"
+val PrimaryScalaVersion = "3.9.0"
 val ScalaCheckVersion = "1-19" // Formatted this way due to usage.
 val ScalaTestVersion = "3.2.20"
 val ScoptVersion = "4.1.0"
@@ -410,11 +409,11 @@ lazy val sourceProjectSettings = Seq(
     "-uniqid",
     "-Werror", // Fail compilation if there are any errors.
     //"-Wnonunit-statement",
+    "-Wsafe-init",
     "-Wunused:all", // Enable all warnings about unused elements (imports, privates, etc.).
     //"-Wvalue-discard", Disabled: too many false positives.
     "-Xverify-signatures",
     "-Yexplicit-nulls", // Don't allow reference types to be null.
-    "-Ysafe-init",
   ),
 
   // Fork the tests, so that they run in a separate process. This improves test reliability.
