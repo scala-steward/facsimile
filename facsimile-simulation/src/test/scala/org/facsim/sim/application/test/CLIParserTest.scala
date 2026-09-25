@@ -299,12 +299,15 @@ extends AnyFunSpec, ScalaCheckPropertyChecks:
         // differences, if the changes are valid, update the target file with the cached usage.
         new TestData:
           withLocale(Locale.US.nn):
-            val cachedFile = getClass.getResource("/CachedUsage.txt").nn.getFile.nn
-            val cachedSource = Source.fromFile(cachedFile)
+            val cachedFile =
+              getClass.getResource("/CachedUsage.txt").nn.openConnection().nn.getInputStream().nn
+            //println(s"DEBUG: File is $cachedFile")
+            val cachedSource = Source.fromInputStream(cachedFile)
             try
               val cachedUsage = s"$versionHeader$LS${cachedSource.mkString}"
               assert(parser.usage === cachedUsage)
             finally
+              cachedFile.close()
               cachedSource.close()
 
     // Test the version function.

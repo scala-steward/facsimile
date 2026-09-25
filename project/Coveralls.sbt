@@ -34,4 +34,6 @@
 //======================================================================================================================
 // SBT file to include support for the coveralls.io site.
 //======================================================================================================================
-addSbtPlugin("org.scoverage" % "sbt-coveralls" % "1.3.15")
+// At the time of writing (9/24/2026), the sbt-coveralls plugin is not compatible with SBT 2.0, so it is removed for
+// now. See also the note in the project's main ./README.md file.
+//addSbtPlugin("org.scoverage" % "sbt-coveralls" % "1.3.15")

@@ -32,9 +32,8 @@
 //======================================================================================================================
 
 //======================================================================================================================
-// SBT file to include GPG plugin.
+// SBT file to include Git plugin.
 //
-// Due to some ongoing issues with the sbt-pgp plugin (note slightly different name), Facsimile has switched to Jakob
-// Odersky's flavor of the plugin, which is simpler, more secure and less buggy.
+// This plugin supports versioning using git, as well as providing information about head commits, etc.
 //======================================================================================================================
-addSbtPlugin("io.crashbox" % "sbt-gpg" % "0.2.1")
+addSbtPlugin("com.github.sbt" % "sbt-git" % "2.2.0")

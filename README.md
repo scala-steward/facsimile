@@ -14,6 +14,12 @@ _[GNU General Public License](http://www.gnu.org/licenses/lgpl-3.0-standalone.ht
 
 Current status of official master _Facsimile_ branch:
 
+_*Note*: The test coverage badge, which is provided by [Coveralls](https://coveralls.io/), is not currently being
+updated because the
+[sbt-coveralls SBT](https://github.com/scoverage/sbt-coverallshttps://github.com/scoverage/sbt-coveralls) plugin has
+been temporarily disabled; this is due to the plugin not supporting SBT 2. We will re-enable it when SBT 2 support is
+available._
+
 [![Maven Central](https://maven-badges.sml.io/sonatype-central/org.facsim/facsimile-simulation_3/badge.svg)](https://maven-badges.sml.io/sonatype-central/org.facsim/facsimile-simulation_3)
 [![Coverage Status](https://coveralls.io/repos/github/Facsimile/facsimile/badge.svg?branch=master)](https://coveralls.io/github/Facsimile/facsimile?branch=master)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/ba518cbf7a13430b9f3854933b5e94e9)](https://app.codacy.com/gh/Facsimile/facsimile/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
