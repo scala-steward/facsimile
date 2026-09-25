@@ -154,12 +154,21 @@ homepage := Some(uri("http://facsim.org/"))
 // any sources, it is still necessary to provide the version of Scala that is in use.
 scalaVersion := PrimaryScalaVersion
 
+// Versions of Scala to cross compile with.
+//
+// Given binary compatibility with Scala 3, there should be no need to compile more than one Scala 3
+crossScalaVersions ++= Seq(PrimaryScalaVersion)
+
 // Support automated builds in GitHub, following commits, PRs, etc.
 //
-// Specify the use of Java 25 in the latest Ubuntu release.
+// Use the following Java releases to run continuous integration tests on GitHub.
 githubWorkflowJavaVersions := Seq(
   JavaSpec.temurin("25"),
+  JavaSpec.zulu("25"),
 )
+
+// Publish using Java Temurin 25.
+githubWorkflowPublishJavaVersion := JavaSpec.temurin("25")
 
 // Publish artifacts to the Sonatype Central Release repository.
 //
